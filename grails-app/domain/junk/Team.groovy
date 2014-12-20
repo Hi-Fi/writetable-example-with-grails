@@ -1,6 +1,12 @@
 package junk
 
 class Team {
+	static marshalling={
+		shouldOutputIdentifier true
+		shouldOutputVersion false
+		shouldOutputClass false
+		deep 'players'
+	}
     String name
     List players
 

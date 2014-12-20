@@ -1,6 +1,11 @@
 package junk
 
 class Player {
+	static marshalling={
+		shouldOutputIdentifier true
+		shouldOutputVersion false
+		shouldOutputClass false
+	}
     String firstName
     String lastName
     String position

@@ -13,8 +13,8 @@ class RestController {
     }
 
     def save(Team team) {
+		team.players.each {it.team = team}
         if(team.save()) {
-			println "${team.errors}"
 			render team as JSON
 		} else {
 			render "Could not save\n ${team.errors}"
